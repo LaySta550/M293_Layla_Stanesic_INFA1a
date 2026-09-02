@@ -8,127 +8,209 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link 
- href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
- rel="stylesheet"/>
-
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"/>
 </head>
+
 <body>
+
 <header>
-    <p>
-     <a href="index.html">Tony's Elektro<br/>
-     Schuppen</a>
-    </p>
+  <section class="container">
+    <a class="start-button" href="index.html">Tony's Elektro<br/>
+    Schuppen</a>
+  </section>
 
-    <nav>
-     <ul>
-       <li>
-         <a href="smartphones.html">Smartphones</a>
-       </li>
-       <li>
-        <a href="tablets.html">Tablets</a>
-       </li>
-       <li>
-         <a href="laptops.html">Laptops</a>
-       </li>
-       <li>
-         <a href="kontakt.html">Kontakt</a>
-       </li>
-     </ul>
-    </nav>
-  </header>
-  <main>
-  <article>
-   <img src="assets/laptop.webp" alt="MacBook Pro 14 Inch Space Grey">
-   <h2>MacBook Pro 14 Inch Space Grey</h2>
-   <h2>1999 CHF</h2>
-   <img src="assets/Cart.png" alt="Cart">
-   <p>The MacBook Pro 14 Inch in Space Grey is a powerful
-       and sleek laptop, featuring Apple's M1 Pro chip for
-       exceptional performance and a stunning Retina display.</p>
-  </article>
+  <nav class="container">
+    <ul class="links">  
+      <a href="smartphones.html">Smartphones</a>
+      <a href="tablets.html">Tablets</a>
+      <a href="laptops.html">Laptops</a>
+      <a href="kontakt.html">Kontakt</a> 
+    </ul>
+  </nav>
+</header>
 
-  <article> 
-    <br><img src="assets/laptop2.webp" alt="Asus Zenbook
-     Pro Dual Screen">
-    <h2>Asus Zenbook
-    Pro Dual Screen</h2> 
-    <h2>1780 CHF</h2>
-    <img src="assets/Cart.png" alt="Cart"> 
-    <p>The Asus Zenbook Pro Dual Screen Laptop is a high
+<main>
+  <h1 class="title">Laptops</h1>
+
+  <section class="products">
+
+    <article class="product">
+      <img src="assets/laptop.webp" alt="MacBook Pro 14 Inch Space Grey">
+
+      <div class="productInfo">
+        <h2>MacBook Pro 14 Inch Space Grey</h2>
+        <h2>1999 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The MacBook Pro 14 Inch in Space Grey is a powerful
+        and sleek laptop, featuring Apple's M1 Pro chip for
+        exceptional performance and a stunning Retina display.
+      </p>
+    </article>
+
+    <article class="product">
+      <img src="assets/laptop2.webp" alt="Asus Zenbook Pro Dual Screen">
+
+      <div class="productInfo">
+        <h2>Asus Zenbook Pro Dual Screen</h2>
+        <h2>1780 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The Asus Zenbook Pro Dual Screen Laptop is a high
         performance device with dual screens, providing
-        productivity and versatility for creative professionals.</p>
-  </article>
+        productivity and versatility for creative professionals.
+      </p>
+    </article>
 
-  <article>
-    <br><img src="assets/laptop3.webp" alt="Huawei Matebook
-    X Pro"> 
-    <h2>Huawei Matebook
-    X Pro</h2>
-    <h2>1399 CHF</h2>
-    <img src="assets/Cart.png" alt="Cart">
-    <p>The Samsung Galaxy Tab in White is a sleek and versatile
-        Android tablet. With a vibrant display, long lasting
-        battery, and a range of features, it offers a great user
-        experience for various tasks.</p> 
-  </article>
+    <article class="product">
+      <img src="assets/laptop3.webp" alt="Huawei Matebook X Pro">
 
-  <article
-    <br><img src="assets/laptop.webp" alt="MacBook Pro 14 Inch Space Grey">
-   <h2>MacBook Pro 14 Inch Space Grey</h2>
-   <h2>1999 CHF</h2>
-   <img src="assets/Cart.png" alt="Cart">
-   <p>The MacBook Pro 14 Inch in Space Grey is a powerful
-       and sleek laptop, featuring Apple's M1 Pro chip for
-       exceptional performance and a stunning Retina display.</p>
-  </article>
-   
-  <article>
-    <br><img src="assets/laptop2.webp" alt="Asus Zenbook
-     Pro Dual Screen">
-    <h2>Asus Zenbook
-    Pro Dual Screen</h2> 
-    <h2>1780 CHF</h2>
-    <img src="assets/Cart.png" alt="Cart"> 
-    <p>The Asus Zenbook Pro Dual Screen Laptop is a high
+      <div class="productInfo">
+        <h2>Huawei Matebook X Pro</h2>
+        <h2>1399 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The Huawei Matebook X Pro is a sleek and versatile
+        laptop with a powerful performance, vibrant display,
+        long lasting battery, and a range of features.
+      </p>
+    </article>
+
+  </section>
+</main>
+<main>
+
+  <section class="products">
+
+    <article class="product">
+      <img src="assets/laptop.webp" alt="MacBook Pro 14 Inch Space Grey">
+
+      <div class="productInfo">
+        <h2>MacBook Pro 14 Inch Space Grey</h2>
+        <h2>1999 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The MacBook Pro 14 Inch in Space Grey is a powerful
+        and sleek laptop, featuring Apple's M1 Pro chip for
+        exceptional performance and a stunning Retina display.
+      </p>
+    </article>
+
+    <article class="product">
+      <img src="assets/laptop2.webp" alt="Asus Zenbook Pro Dual Screen">
+
+      <div class="productInfo">
+        <h2>Asus Zenbook Pro Dual Screen</h2>
+        <h2>1780 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The Asus Zenbook Pro Dual Screen Laptop is a high
         performance device with dual screens, providing
-        productivity and versatility for creative professionals.</p>
-  </article>
+        productivity and versatility for creative professionals.
+      </p>
+    </article>
 
-  <article>
-    <br><img src="assets/laptop3.webp" alt="Huawei Matebook
-    X Pro"> 
-    <h2>Huawei Matebook
-    X Pro</h2>
-    <h2>1399 CHF</h2>
-    <img src="assets/Cart.png" alt="Cart">
-    <p>The Samsung Galaxy Tab in White is a sleek and versatile
-        Android tablet. With a vibrant display, long lasting
-        battery, and a range of features, it offers a great user
-        experience for various tasks.</p> 
-  </article>
-  </main>
-  <footer>
-    <li>
-     <h2>Öffnungszeiten</h2>
-     <p>Mo - Do: 11 - 18:30 Uhr</p>
-     <p>Fr - Sa: 11 - 17:00 Uhr</p>
-     <p>So: geschlossen</p>
-    </li>
-    <li>
-      <p><br>“Bei Tony’s Elektroschuppen geht es nicht nur um
-      Geräte, sondern um die Menschen dahinter: Ich
-      liebe es, Ihnen die Technik zu zeigen, die ihr Leben
-      bereichert.”
-      - Tony</p>
-    </li>
-    <li>
+    <article class="product">
+      <img src="assets/laptop3.webp" alt="Huawei Matebook X Pro">
+
+      <div class="productInfo">
+        <h2>Huawei Matebook X Pro</h2>
+        <h2>1399 CHF</h2>
+        <img src="assets/Cart.png" alt="Cart">
+      </div>
+
+      <select>
+        <option>Speicherplatz auswählen</option>
+        <option>200GB</option>
+        <option>100GB</option>
+        <option>1TB</option>
+      </select>
+
+      <p>
+        The Huawei Matebook X Pro is a sleek and versatile
+        laptop with a powerful performance, vibrant display,
+        long lasting battery, and a range of features.
+      </p>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <section class="container footer-container">
+
+    <article class="openingHours">
+      <h2>Öffnungszeiten</h2>
+      <p>Mo - Do: 11 - 18:30 Uhr</p>
+      <p>Fr - Sa: 11 - 17:00 Uhr</p>
+      <p>So: geschlossen</p>
+    </article>
+
+    <article class="tonyQuote">
+      <p>
+        „Bei Tony’s Elektroschuppen geht es nicht nur um<br>
+        Geräte, sondern um die Menschen dahinter: Ich<br>
+        liebe es, Ihnen die Technik zu zeigen, die ihr Leben<br>
+        bereichert.“<br>
+        - Tony
+      </p>
+    </article>
+
+    <article class="adress">
       <h2>Adresse</h2>
       <p>Tony's Elektro Schuppen</p>
       <p>Musterstrasse 22</p>
       <p>6456 Musterhausen</p>
-    </li>
-  </footer>
-  
-  
+    </article>
+
+  </section>
+</footer>
+
 </body>
 </html>

@@ -10,55 +10,66 @@
   <link 
  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
  rel="stylesheet"/>
-
 </head>
 <body>
-<header>
-    <p>
-    <a href="index.html">Tony's Elektro<br/>
-     Schuppen</a>
-    </p>
 
-    <nav>
-     <ul>
-       <li>
+  <header>
+    <section class="container">
+    <p> 
+     
+      <a class="start-button" href="index.html">Tony's Elektro<br/>
+     Schuppen</a>
+     
+    </p>
+    </section>
+
+    <nav class="container">
+     <ul class="links">
+          
          <a href="smartphones.html">Smartphones</a>
-       </li>
-       <li>
-        <a href="tablets.html">Tablets</a>
-       </li>
-       <li>
+     
+         <a href="tablets.html">Tablets</a>
+       
          <a href="laptops.html">Laptops</a>
-       </li>
-       <li>
+       
          <a href="kontakt.html">Kontakt</a>
-       </li>
+       
      </ul>
     </nav>
   </header>
   <main>
-<h1> Kontakt</h1>
-<h2>Dein Name</h2>
-<input type="text" required> <!--KI gefragt wie man es required macht-->
-<h2>E-Mail</h2>
-<input type="text" required>
-<h2>Nachricht</h2>
-<input type="text" required> 
+<h1 class="kontakt"> Kontakt</h1>
 
-<form>
-  <p>Was denkst du über unsere Preise?</p>
+<section class = "name">
+<h2>Dein Name</h2></br>
+<input type="text" required> <!--KI gefragt wie man es required macht-->
+</section>
+
+<section class = "Email">
+<h2>E-Mail</h2></br>
+<input type="text" required>
+</section>
+
+<section class = "message">
+<h2>Nachricht</h2></br>
+<input type="text" required> 
+</section>
+
+<form class = "rating">
+  <p>Was denkst du über</br>unsere Preise?</p></br>
   
   <label>
     <input type="radio" name="bewertung" value="super fair" required> super fair
-  </label><br>
+  </label></br>
   <label>
     <input type="radio" name="bewertung" value="okay"> okay
   </label><br>
   <label>
     <input type="radio" name="bewertung" value="teuer"> teuer
   </label>
-  
+ 
   <br><button type="submit">Absenden</button>
+
 </form>
 <div id="danke" style="display: none;"> <!--KI gefragt wie man das benutzt (Dankes nachricht braucht JavaScript)-->
     <h3>Vielen Dank!</h3>
@@ -66,28 +77,33 @@
 </div>
 
  </main>
+
   <footer>
-    <li>
-     <h2>Öffnungszeiten</h2>
-     <p>Mo - Do: 11 - 18:30 Uhr</p>
-     <p>Fr - Sa: 11 - 17:00 Uhr</p>
-     <p>So: geschlossen</p>
-    </li>
-    <li>
-      <p><br>“Bei Tony’s Elektroschuppen geht es nicht nur um
-      Geräte, sondern um die Menschen dahinter: Ich
-      liebe es, Ihnen die Technik zu zeigen, die ihr Leben
-      bereichert.”
-      - Tony</p>
-    </li>
-    <li>
+  <section class="container footer-container">
+    <article class = openingHours>
+      <h2>Öffnungszeiten</h2>
+      <p>Mo - Do: 11 - 18:30 Uhr</p>
+      <p>Fr - Sa: 11 - 17:00 Uhr</p>
+      <p>So: geschlossen</p>
+    </article>
+    <article class="tonyQuote">
+      <p>
+        „Bei Tony’s Elektroschuppen geht es nicht nur um<br>
+        Geräte, sondern um die Menschen dahinter: Ich<br>
+        liebe es, Ihnen die Technik zu zeigen, die ihr Leben<br>
+        bereichert.“<br>
+        - Tony
+      </p>
+    </article>
+    <article class = adress>
       <h2>Adresse</h2>
       <p>Tony's Elektro Schuppen</p>
       <p>Musterstrasse 22</p>
       <p>6456 Musterhausen</p>
-    </li>
-  </footer>
-  
-  
+    </article>
+  </section>
+</footer>
+
+
 </body>
 </html>
