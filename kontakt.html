@@ -40,36 +40,36 @@
   <main>
 <h1 class="kontakt"> Kontakt</h1>
 
-<section class = "name">
+<form class="kontaktForm">
+
+<section class="name">
 <h2>Dein Name</h2></br>
-<input type="text" required> <!--KI gefragt wie man es required macht-->
+<input type="text" required>
 </section>
 
-<section class = "Email">
+<section class="Email">
 <h2>E-Mail</h2></br>
 <input type="text" required>
 </section>
 
-<section class = "message">
+<section class="message">
 <h2>Nachricht</h2></br>
-<input type="text" required> 
+<input type="text" required>
 </section>
 
-<form class = "rating">
-  <p>Was denkst du über</br>unsere Preise?</p></br>
-  
-  <label>
-    <input type="radio" name="bewertung" value="super fair" required> super fair
-  </label></br>
-  <label>
-    <input type="radio" name="bewertung" value="okay"> okay
-  </label><br>
-  <label>
-    <input type="radio" name="bewertung" value="teuer"> teuer
-  </label></br>
-
-  <button type="submit">Absenden</button>
-
+<section class="rating">
+<p>Was denkst du über</br>unsere Preise?</p></br>
+<label>
+<input type="radio" name="bewertung" value="super fair" required> super fair
+</label></br>
+<label>
+<input type="radio" name="bewertung" value="okay"> okay
+</label><br>
+<label>
+<input type="radio" name="bewertung" value="teuer"> teuer
+</label></br>
+</section>
+<button class="button" type="submit">Absenden</button>
 </form>
 <div id="danke" style="display: none;"> <!--KI gefragt wie man das benutzt (Dankes nachricht braucht JavaScript)-->
     <h3>Vielen Dank!</h3>

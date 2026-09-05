@@ -36,6 +36,13 @@ header a {
   font-weight: 600;  
   text-transform: uppercase; 
 } 
+.start-button:hover {
+  text-decoration: underline;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
  
 header .links { 
   display: flex; 
@@ -254,8 +261,9 @@ text-align: right;
 .name h2{
   width: 160px;
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 12px;
   margin-top: 1000;
+  font-weight: 500;
 }
 .Email input{
    width: 300px;
@@ -289,8 +297,9 @@ text-align: right;
 .Email h2{
   width: 160px;
   flex-shrink: 0;
-  margin-top: -100px;
-  font-size: 1rem;
+  margin-top: -85px;
+  font-size: 12px;
+  font-weight: 500;
 }
 .message{  
   display: flex;  
@@ -302,14 +311,19 @@ text-align: right;
   width: 160px;
   flex-shrink: 0;
   margin-top: -100px;
-  font-size: 1rem;
+  font-size: 12px;
+  font-weight: 500;
 }
 .rating input{
   width: 100px;
   height: 20px;
-  padding: -100px 10px;
+  padding: -10px 10px;
   margin-bottom: -20px;
   margin-top: -100px;
+  margin-right: -20px;
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 500;
 }
 
 .rating{  
@@ -317,10 +331,37 @@ text-align: right;
   justify-content: center;  
   align-items: center;  
   height: 100px;  
+  font-size: 12px;
+  font-weight: 500;
 }
-.rating h2{
+.rating p{
   width: 160px;
   flex-shrink: 0;
   margin-top: -85px;
-  font-size: 1rem;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  margin-top: -5px
 }
+
+.button {
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 26, 152);
+  color:white;
+  margin-left: 560px;
+}
+button:hover{
+  background-color: rgb(13, 13, 132);
+  color: rgb(189, 186, 186);
+}
+
+/*-----------------------------------------------------*/
+/*Mobile*/
