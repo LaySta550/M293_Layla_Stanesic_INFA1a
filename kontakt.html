@@ -37,48 +37,45 @@
      </ul>
     </nav>
   </header>
-  <main>
-<h1 class="kontakt"> Kontakt</h1>
+<body>
+<script src="javascript/kontakt.js" defer></script>
+ <main>
+   <h1 class="kontakt"> Kontakt</h1>
 
-<form class="kontaktForm">
+   <form class="kontaktForm">
 
-<section class="name">
-<h2>Dein Name</h2></br>
-<input type="text" required>
-</section>
+   <section class="name">
+     <h2>Dein Name</h2></br>
+     <input type="text" required>
+   </section>
 
-<section class="Email">
-<h2>E-Mail</h2></br>
-<input type="text" required>
-</section>
+   <section class="Email">
+     <h2>E-Mail</h2></br>
+     <input type="text" required>
+   </section>
 
-<section class="message">
-<h2>Nachricht</h2></br>
-<input type="text" required>
-</section>
+    <section class="message">
+     <h2>Nachricht</h2></br>
+     <input type="text" required>
+    </section>
 
-<section class="rating">
-<p>Was denkst du über</br>unsere Preise?</p></br>
-<label>
-<input type="radio" name="bewertung" value="super fair" required> super fair
-</label></br>
-<label>
-<input type="radio" name="bewertung" value="okay"> okay
-</label><br>
-<label>
-<input type="radio" name="bewertung" value="teuer"> teuer
-</label></br>
-</section>
-<button class="button" type="submit">Absenden</button>
-</form>
-<div id="danke" style="display: none;"> <!--KI gefragt wie man das benutzt (Dankes nachricht braucht JavaScript)-->
-    <h3>Vielen Dank!</h3>
-    <p>Vielen Dank für Ihre Nachricht.</p>
-</div>
-
- </main>
-
-  <footer>
+   <section class="rating">
+     <p>Was denkst du über</br>unsere Preise?</p></br>
+     <article>
+     <input type="radio" name="rating" value="super fair" required> super fair
+     </article></br>
+     <article>
+     <input type="radio" name="rating" value="okay"> okay
+     </article><br>
+     <article>
+     <input type="radio" name="rating" value="teuer"> teuer
+     </article></br>
+   </section>
+     <button class="button" type="submit">Absenden</button>
+   </form>
+</main>
+</body>
+ <footer>
   <section class="container footer-container">
     <article class = openingHours>
       <h2>Öffnungszeiten</h2>
