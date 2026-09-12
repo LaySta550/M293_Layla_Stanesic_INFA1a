@@ -366,3 +366,158 @@ button:hover{
 /*-----------------------------------------------------*/
 /*Mobile*/
 
+/*Header Mobile*/
+@media (max-width: 768px) {
+  header { 
+  height: 150px; 
+  padding-top: 20px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px; 
+  gap: 15px;
+  width: 100%;
+}  
+  
+header .container { 
+  max-width: none; 
+  padding-left: 0; 
+  padding-right: 0; 
+  margin-left: 0; 
+  margin-right: 0; 
+} 
+ 
+header a {  
+  color: white;  
+  text-decoration: none; 
+  gap: 15px;
+  font-size: 20px;
+}  
+.start-button {  
+  font-weight: 600;  
+  text-transform: uppercase; 
+  font-size: 25px;
+} 
+header .links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/*----------------------------------------------------------------*/
+/*Index Mobile*/
+/*----------------------------------------------------------------------*/
+/*Footer Mobile*/
+footer {  
+  background-color: rgb(26, 26, 152);  
+  padding: 20px;  
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 140px;
+  margin-top: 40px;
+}  
+  
+.footer-container {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  color: white;  
+}  
+  
+.footer-container article { 
+  flex: 1; 
+} 
+ 
+.openingHours { 
+  margin-bottom: 60px;
+  text-align: left; 
+} 
+ 
+.tonyQuote { 
+  margin-bottom: 20px;
+  text-align: center; 
+  font-style: italic; 
+} 
+ 
+.adress { 
+  margin-bottom: 60px;
+  text-align: right; 
+}  
+  
+.footer-container h2 {  
+  color: white;  
+  margin-bottom: 10px;  
+  font-size: 13px; 
+}  
+  
+.footer-container p {  
+  color: white;  
+  font-size: 10px; 
+}  
+  
+.container {  
+  max-width: 1200px;  
+  padding-left: 16px;  
+  padding-right: 16px;  
+  margin-left: auto;  
+  margin-right: auto;  
+} 
+/*------------------------------------------------------------------------*/
+/*Index Mobile*/ 
+body {  
+  font-family: "Roboto", sans-serif;   
+}   
+
+.title {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100px;  
+  font-size: 30px;
+}  
+  
+.links {  
+  display: flex;  
+  justify-content: space-around;  
+}
+
+.photos {  
+  width: 325px;  
+  height: 200px;  
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
+  margin-bottom: -15px;  
+  margin-top: 10px;
+}  
+
+.bild-container {  
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 48px; 
+  margin-top: 80px; 
+  list-style: none;
+}
+  
+.bild-container a {
+  width: 300px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.bild-container img {  
+   width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid black;
+    
+}
+
+
+.bild-container p {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+}
