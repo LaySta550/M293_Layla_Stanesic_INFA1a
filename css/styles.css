@@ -523,62 +523,65 @@ footer {
 .productImg {
   width: 300px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .productName {
-text-align: left; 
+  text-align: left; 
 }
 .price {
-text-align: center; 
+  text-align: center; 
 }
 
 .Cart {
-text-align: right; 
+  text-align: right; 
 }
 .products {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .product {
-    width: 220px;
+  width: 220px;
 }
 
 .product  img {
-    width: 175px;
-    height: 175px;
-    object-fit: contain;
-    border: 1px solid black;
-    margin-bottom: 5px;
-    margin-top: 20px;
+  width: 175px;
+  height: 175px;
+  object-fit: contain;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 .productInfo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 .productInfo img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-    border: none
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border: none
 }
 
 .productInfo h2 {
-    font-size: 12px;
-    margin-bottom: 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .productInfo img {
   margin-top: -5px;
-    width: 25px;
-    height: 25px;
-    margin-bottom: 5px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
 
 }
 
@@ -593,9 +596,131 @@ text-align: right;
 }
 
 .product p {
-    font-size: 10px;
-    margin-bottom: 5px;
+ font-size: 10px;
+  margin-bottom: 5px;
 }
-/*-------------------------------------------------------*/
+/*------------------------------------------------------------*/
 /*Contact*/
+.kontakt {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100px;  
+}
+.name{  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100px; 
+}
+.name h2{
+  width: 160px;
+  flex-shrink: 0;
+  font-size: 12px;
+  margin-top: 1000;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Email input{
+  width: 200px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: -10px;
+  margin-top: -100px;
+  border-color: black;
+  border-width: 1px;
+}
+.name input{
+  width: 200px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-bottom: -100px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-color: black;
+  border-width: 1px;
+}
+
+.message input{
+  width: 200px;
+  height: 100px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-top: -55px;
+  border-color: black;
+  border-width: 1px;
+}
+
+.Email {
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100px;  
+
+}
+.Email h2{
+  width: 160px;
+  flex-shrink: 0;
+  margin-top: -85px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message{  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: -100px;  
+}
+.message h2{
+  width: 160px;
+  flex-shrink: 0;
+  margin-top: -100px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating p{
+  width: 160px;
+  flex-shrink: 0;
+  margin-top: -85px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  margin-top: -5px;
+  margin-top: 10px;
+}
+
+.button {
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(26, 26, 152);
+  color:white;
+  margin-left: 560px;
+}
+button:hover{
+  background-color: rgb(13, 13, 132);
+  color: rgb(189, 186, 186);
+}
+
 }
