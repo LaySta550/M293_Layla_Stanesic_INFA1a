@@ -32,18 +32,17 @@ header a {
   text-decoration: none; 
 }  
   
-.start-button {  
+.start-button {   
   font-weight: 600;  
   text-transform: uppercase; 
 } 
-.start-button:hover {
+.start-button:hover { 
   text-decoration: underline;
 }
 .links a:hover {
   text-decoration: underline;
 }
 
- 
 header .links { 
   display: flex; 
   align-items: center; 
@@ -73,7 +72,7 @@ body {
   justify-content: space-around;  
 }
 
-.photos {  
+.photos {  /*Bild grösse verstellt*/
   width: 450px;  
   height: 250px;  
   display: block;  
@@ -83,7 +82,7 @@ body {
   margin-top: -20px;
 }  
 
-.bild-container {  
+.bild-container {   /*Bild Position erstellt*/
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
@@ -103,7 +102,7 @@ body {
    width: 300px;
     height: 170px;
     object-fit: cover;
-    border: 1px solid black;
+    border: 1px solid black; /*Rahmen breite und Farbe und art vom Rahmen erstellt*/
     
 }
 
@@ -193,7 +192,7 @@ text-align: right;
     width: 220px;
 }
 
-.product  img {
+.product  img {  /*Produkt Rahmen design gemacht*/
     width: 220px;
     height: 220px;
     object-fit: contain;
@@ -208,7 +207,7 @@ text-align: right;
     align-items: center;
     margin-bottom: 5px;
 }
-.productInfo img {
+.productInfo img { /*Produkt Bild Position gemacht*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +220,7 @@ text-align: right;
     margin-bottom: 5px;
 }
 
-.productInfo img {
+.productInfo img { /*Produkt Bild Position gemacht ist zusatz zur zeile 210*/
   margin-top: -5px;
     width: 25px;
     height: 25px;
@@ -229,7 +228,7 @@ text-align: right;
 
 }
 
-.product select {
+.product select { /*Auswahl boxen designt wo man GB und TB aussuchen kann*/
   width: 300px;
   height: 25px;
   font-size: 10px;
@@ -252,7 +251,7 @@ text-align: right;
   align-items: center;  
   height: 100px;  
 }
-.name{  
+.name{  /*Allgemeine Platzierung von alles*/
   display: flex;  
   justify-content: center;  
   align-items: center;  
@@ -265,14 +264,14 @@ text-align: right;
   margin-top: 1000;
   font-weight: 500;
 }
-.Email input{
+.Email input{ /*Text Feld bearbeitet für Email*/
    width: 300px;
   height: 30px;
   padding: 5px 10px;
   margin-bottom: -10px;
   margin-top: -100px;
 }
-.name input{
+.name input{ /*Text Feld bearbeitet für Name*/
   width: 300px;
   height: 30px;
   padding: 5px 10px;
@@ -280,7 +279,7 @@ text-align: right;
   margin-top: -100px;
 }
 
-.message input{
+.message input{ /*Text Feld bearbeitet für Nachricht*/
     width: 300px;
   height: 100px;
   padding: 5px 10px;
@@ -288,7 +287,7 @@ text-align: right;
   margin-top: -55px;
 }
 
-.Email {
+.Email { /*Allgemeine Platzierung von alles*/
   display: flex;  
   justify-content: center;  
   align-items: center;  
@@ -301,7 +300,7 @@ text-align: right;
   font-size: 12px;
   font-weight: 500;
 }
-.message{  
+.message{  /*Allgemeine Platzierung von alles*/
   display: flex;  
   justify-content: center;  
   align-items: center;  
@@ -314,7 +313,7 @@ text-align: right;
   font-size: 12px;
   font-weight: 500;
 }
-.rating input{
+.rating input{ /*Kreise  verändert von bewetung*/
   width: 100px;
   height: 20px;
   padding: -10px 10px;
@@ -358,13 +357,13 @@ text-align: right;
   color:white;
   margin-left: 560px;
 }
-button:hover{
+button:hover{ 
   background-color: rgb(13, 13, 132);
   color: rgb(189, 186, 186);
 }
 
 /*-----------------------------------------------------*/
-/*Mobile*/
+/*Mobile dort habe ich alle desktop infos reingemacht und dann es in mobile angaben umgewandelt*/
 
 /*Header Mobile*/
 @media (max-width: 600px) {

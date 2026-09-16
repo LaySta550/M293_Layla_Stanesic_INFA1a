@@ -1,16 +1,37 @@
-//Tablets
-const getSmartphoneProducts = async () => {
-  const response = await fetch (
-    "https://dummyjson.com/products/category/tablets",
+//Daten Tablets Dynamisch aus API hollen.
+const getTabletsProducts = async () => {
+  const response = await fetch( // Nimmt die Daten von API
+    "https://dummyjson.com/products/category/tablets",//API infos zum Tablet
   );
+  const data = await response.json();  // Antwort von API in json umwandeln
+  const tablets = data.products;
 
-  const data = await response.json();
+  const productTiles = document.querySelectorAll(".product"); //Von Produkte auswählen (CSS)
 
-  const products = data.products;
-  console.log(products);
+  for (let i = 0; i < productTiles.length; i++) {
+    if (i >= tablets.length) {
+      break;
+    }
 
+    const currentProduct = tablets[i];
+    const currentTile = productTiles[i];
+
+    const imgElement = currentTile.querySelector("img"); // Bilder auswählen und ersetzten
+    imgElement.src = currentProduct.thumbnail;
+    imgElement.alt = currentProduct.title;
+
+    const headings = currentTile.querySelectorAll(".productInfo h2"); // Titel auswählen aus HTML und ersetzen durch API daten
+    const titleElement = headings[0];
+    const priceElement = headings[1];
+
+    titleElement.textContent = currentProduct.title; 
+    priceElement.textContent = currentProduct.price + " CHF"; // Preis auswählen von html und ersetzen durch API infos
+
+    const descriptionElement = currentTile.querySelector("p"); // Beschreibung zum Produkt auswählen aus html und erdetzen durch API
+    descriptionElement.textContent = currentProduct.description;
+  }
 };
 
-document.addEventListener("DOMContentLoaded", () =>{
-  getSmartphoneProducts();
+document.addEventListener("DOMContentLoaded", () => { // Funktion auruffen wenn DOM geladen ist
+  getTabletsProducts();
 });
