@@ -186,8 +186,11 @@ flex-shrink: 0;
 }
 .products {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+    max-width: 900px;   /* 3 × 220px + 2 × 60px Gap ≈ 780px, etwas Puffer dazu */
+    margin: 0 auto;
 }
 
 .product {
@@ -719,7 +722,7 @@ footer {
   justify-content: center;
   background-color: rgb(26, 26, 152);
   color:white;
-  margin-left: 560px;
+  margin-left: 180px;
 }
 button:hover{
   background-color: rgb(13, 13, 132);

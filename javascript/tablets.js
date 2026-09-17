@@ -1,37 +1,68 @@
-//Daten Tablets Dynamisch aus API hollen.
-const getTabletsProducts = async () => {
+// Daten Tablets dynamisch aus API holen und Produkt-Karten komplett per JS erstellen.
+
+const getTabletProducts = async () => {
   const response = await fetch( // Nimmt die Daten von API
-    "https://dummyjson.com/products/category/tablets",//API infos zum Tablet
+    "https://dummyjson.com/products/category/tablets" // API infos zum Tablet
   );
-  const data = await response.json();  // Antwort von API in json umwandeln
+  const data = await response.json(); // Antwort von API in JSON umwandeln
   const tablets = data.products;
 
-  const productTiles = document.querySelectorAll(".product"); //Von Produkte auswählen (CSS)
+  const productList = document.getElementById("productList"); // Container im HTML
 
-  for (let i = 0; i < productTiles.length; i++) {
-    if (i >= tablets.length) {
-      break;
-    }
-
-    const currentProduct = tablets[i];
-    const currentTile = productTiles[i];
-
-    const imgElement = currentTile.querySelector("img"); // Bilder auswählen und ersetzten
-    imgElement.src = currentProduct.thumbnail;
-    imgElement.alt = currentProduct.title;
-
-    const headings = currentTile.querySelectorAll(".productInfo h2"); // Titel auswählen aus HTML und ersetzen durch API daten
-    const titleElement = headings[0];
-    const priceElement = headings[1];
-
-    titleElement.textContent = currentProduct.title; 
-    priceElement.textContent = currentProduct.price + " CHF"; // Preis auswählen von html und ersetzen durch API infos
-
-    const descriptionElement = currentTile.querySelector("p"); // Beschreibung zum Produkt auswählen aus html und erdetzen durch API
-    descriptionElement.textContent = currentProduct.description;
-  }
+  tablets.forEach((product) => {
+    const article = createProductCard(product);
+    productList.appendChild(article);
+  });
 };
 
-document.addEventListener("DOMContentLoaded", () => { // Funktion auruffen wenn DOM geladen ist
-  getTabletsProducts();
+// Erstellt eine einzelne Produkt-Karte (article.product) aus einem API-Produkt-Objekt
+const createProductCard = (product) => {
+  const article = document.createElement("article");
+  article.className = "product";
+
+  // Bild
+  const img = document.createElement("img");
+  img.src = product.thumbnail;
+  img.alt = product.title;
+  article.appendChild(img);
+
+  // Titel / Preis / Cart-Icon
+  const productInfo = document.createElement("div");
+  productInfo.className = "productInfo";
+
+  const titleHeading = document.createElement("h2");
+  titleHeading.textContent = product.title;
+
+  const priceHeading = document.createElement("h2");
+  priceHeading.textContent = product.price + " CHF";
+
+  const cartImg = document.createElement("img");
+  cartImg.src = "assets/Cart.png";
+  cartImg.alt = "Cart";
+
+  productInfo.appendChild(titleHeading);
+  productInfo.appendChild(priceHeading);
+  productInfo.appendChild(cartImg);
+  article.appendChild(productInfo);
+
+  // Speicherplatz-Auswahl
+  const select = document.createElement("select");
+  const storageOptions = ["Speicherplatz auswählen", "64GB", "128GB", "256GB"];
+  storageOptions.forEach((text) => {
+    const option = document.createElement("option");
+    option.textContent = text;
+    select.appendChild(option);
+  });
+  article.appendChild(select);
+
+  // Beschreibung
+  const description = document.createElement("p");
+  description.textContent = product.description;
+  article.appendChild(description);
+
+  return article;
+};
+
+document.addEventListener("DOMContentLoaded", () => { // Funktion aufrufen wenn DOM geladen ist
+  getTabletProducts();
 });
