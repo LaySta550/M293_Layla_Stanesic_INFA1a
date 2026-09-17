@@ -1,13 +1,12 @@
-// Daten Laptops dynamisch aus API holen und Produkt-Karten komplett per JS erstellen.
-
+// Daten Laptops dynamisch aus API holen 
 const getLaptopProducts = async () => {
   const response = await fetch( // Nimmt die Daten von API
-    "https://dummyjson.com/products/category/laptops" // API infos zum Laptop
+    "https://dummyjson.com/products/category/laptops" 
   );
   const data = await response.json(); // Antwort von API in JSON umwandeln
   const laptops = data.products;
 
-  const productList = document.getElementById("productList"); // Container im HTML
+  const productList = document.getElementById("productList"); // Infos im HTML
 
   laptops.forEach((product) => {
     const article = createProductCard(product);
@@ -15,18 +14,17 @@ const getLaptopProducts = async () => {
   });
 };
 
-// Erstellt eine einzelne Produkt-Karte (article.product) aus einem API-Produkt-Objekt
 const createProductCard = (product) => {
   const article = document.createElement("article");
   article.className = "product";
 
-  // Bild
+  // Bilder von Produkten
   const img = document.createElement("img");
   img.src = product.thumbnail;
   img.alt = product.title;
   article.appendChild(img);
 
-  // Titel / Preis / Cart-Icon
+  // Produkt name und Preis
   const productInfo = document.createElement("div");
   productInfo.className = "productInfo";
 
@@ -45,7 +43,7 @@ const createProductCard = (product) => {
   productInfo.appendChild(cartImg);
   article.appendChild(productInfo);
 
-  // Speicherplatz-Auswahl
+  // Speicherplatz Selection
   const select = document.createElement("select");
   const storageOptions = ["Speicherplatz auswählen", "500GB", "1TB", "2TB"];
   storageOptions.forEach((text) => {
@@ -55,7 +53,7 @@ const createProductCard = (product) => {
   });
   article.appendChild(select);
 
-  // Beschreibung
+  // Produkt info
   const description = document.createElement("p");
   description.textContent = product.description;
   article.appendChild(description);
