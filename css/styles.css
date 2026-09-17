@@ -177,10 +177,12 @@ text-align: left;
 }
 .price {
 text-align: center; 
+flex-shrink: 0; /*Gegenstand grösse verändert sich nicht*/
 }
 
 .Cart {
 text-align: right; 
+flex-shrink: 0;
 }
 .products {
     display: flex;
@@ -218,6 +220,8 @@ text-align: right;
 .productInfo h2 {
     font-size: 14px;
     margin-bottom: 5px;
+    flex: 1; /*KI nach verbesserung gefragt*/
+    min-width: 0;
 }
 
 .productInfo img { /*Produkt Bild Position gemacht ist zusatz zur zeile 210*/
